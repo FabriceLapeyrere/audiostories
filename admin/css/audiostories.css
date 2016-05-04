@@ -1,0 +1,150 @@
+body{background-color:#EEE;font-family:sans;}
+form.login{background-color:#fff;width:350px;border-radius:5px;border:1px solid #aaa;margin:50px auto;text-align:center;padding:20px;box-shadow:2px 2px 20px #666;}
+.error {border-color:red;}
+
+.cursor {cursor:pointer;}
+.on-drag-hover {
+	background-color:#ccc;
+}
+
+[draggable] {
+	cursor: move;
+}
+.avant {
+	position:absolute;
+	height:10px;
+	top:0;
+	left:0;
+	right:0;
+}
+.apres {
+	position:absolute;
+	height:10px;
+	bottom:0;
+	left:0;
+	right:0;
+}
+.tree ul {margin-bottom:0;}
+
+.vide {color:#CCC;}
+.multi {color:#CCC;margin-right:10px;}
+.multi.active {color:#666;}
+ul.list-group {margin-top:10px;}
+
+.value {font-weight:bold;}
+.gris {color:#999;}
+
+.my-drop-zone { border: dotted 3px lightgray; }
+.nv-file-over { border: dotted 3px red; }
+
+.audiojs {width:100%;}
+.audiojs .play-pause {width:10%;}
+.audiojs .scrubber {width:60%;}
+.audiojs .timer {width:30%;}
+
+.navbar li {padding-left:15px;}
+
+.question {color:green;}
+
+.wait {position:absolute;top:60px;left:15px;}
+
+.mini {font-size:0.7em;color:grey;}
+.inter {height:10px;}
+.label-contact {color:grey;}
+.id {position:absolute;bottom:2px;right:20px;}
+.contact h3 {margin:0;font-size:1.3em;}
+.contact-btn {position:absolute;bottom:7px;right:7px;font-size:0.8em;}
+
+h3.structure, span.structure, a.structure, .structure a, .individu a.structure {color:green;}
+h3.individu, span.individu, a.individu, .individu a, .structure a.individu {color:#428bca;}
+
+.panier-btn-ko {position:absolute;top:0;left:0;height:100%;width:15px;background-color:#EEE;cursor:pointer;}
+.panier-btn-ok {position:absolute;top:0;left:0;height:100%;width:15px;background-color:#CCC;cursor:pointer;}
+
+.mask {background-color:#EEE;position:fixed;top:0;bottom:0;right:0;left:0;}
+.tag {color:#BBB;font-size:0.8em;padding:0px 3px;border-radius:4px;border:1px solid #BBB;margin-right:2px;}
+li.tag-list {padding-right:2px;}
+.racine{position:absolute;width:15px;height:100%;top:0;left:0;}
+
+.petit {font-size:0.8em;}
+
+li.cas {height:4.5em;overflow:hidden;}
+li.cas:hover {min-height:4.5em;height:auto;}
+li.etab {height:4.5em;overflow:hidden;}
+li.etab:hover {min-height:4.5em;height:auto;background:#EFEFEF;}
+
+.news-first {height:20px;border-bottom:1px solid lightgray;}
+.news-last {height:50px;border-top:1px solid lightgray;}
+.news-empty {padding:30px;color:#333;}
+.menuBloc {display:none;}
+.menuBloc {position:absolute;z-index:10;top:5px;left:5px;padding:5px;background:#fff;
+	-webkit-box-shadow: 0 6px 6px -6px black;
+	-moz-box-shadow: 0 6px 6px -6px black;
+	box-shadow: 0 6px 12px -6px black;
+	border-radius:4px;
+	border:1px solid #ccc;
+	font-family:sans-serif;
+	font-style:italic;
+}
+.menuBloc p {margin:5px;}
+.menuBloc div {padding-bottom:2px;}
+.bloc:hover .menuBloc {display:block;}
+.bloc {position:relative;}
+.bloc .html {width:100%;border:none;}
+.impair {background:#EAEAEA;}
+.pair {background:#EFEFEF;}
+.clair {opacity:0.5;}
+.bloc.on-drag-hover{opacity:0.5;}
+.fixed {height:100%;top:0;overflow-y:scroll;}
+.selected{font-weight:bold;}
+.cas-suivante {border-top:1px solid #FFF;}
+.vs-scroll {height:100%;overflow-y:scroll;}
+.vs-scroll.etabs {height:500px;overflow-y:scroll;}
+.courant {background-color:#FDFDFD;}
+.erreur{color:red;}
+.progress-center{position:absolute;top:0;left:0;right:0;bottom:0;text-align:center;}
+.progress {position:relative;}
+
+.pgauche{width:50%;float:left;min-height:200px;position:relative;}
+.pdroite{width:50%;float:left;min-height:200px;position:relative;}
+.tab-container{padding:10px;}
+.tab {color:#AAA;padding:0 20px;font-size:1.5em;cursor:pointer;}
+.tab.actif {color:#000;padding:0 20px;}
+.clair {opacity:0.5;}
+.inter {height:10px;}
+.wrapperR {
+    display: inline-block;
+    position: relative;
+    padding:0;
+}
+.wrapperR:after {
+    display: block;
+    content: '';
+}
+.pgauche .boutons, .pdroite .boutons {
+	position:absolute;
+	top:10px;
+	left:10px;
+	display:none;
+	cursor:pointer;
+}
+.pgauche:hover .boutons, .pdroite:hover .boutons {
+	display:block;
+}
+.pgauche:hover .color-thief, .pdroite:hover .color-thief {
+	display:inline;
+	background-color:#666;
+	color:#FFF;
+	padding:5px;
+	border-radius:4px;
+	box-shadow:2px 2px 10px #333;
+}
+.pgauche:hover .une, .pdroite:hover .une {
+	display:inline;
+	background-color:#666;
+	color:#FFF;
+	padding:5px;
+	border-radius:4px;
+	box-shadow:2px 2px 10px #333;
+}
+.img-responsive{width:100%;}

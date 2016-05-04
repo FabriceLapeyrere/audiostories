@@ -1,0 +1,17 @@
+<img class="wait" ng-if="!done || wait || suspend" src="img/loader.gif" />
+<div ng-if="done">
+	<div class="col-xs-12 col-md-offset-2 col-md-8">
+		<p><span class="btn btn-primary" ng-click="addPageMod()">Nouvelle Page</span></p>
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="page in pages | exists">
+				<div class="col-sm-12">
+					<div class="contact-btn cursor">
+						<span class="glyphicon glyphicon-trash" ng-confirm-click="delPage(page)" ng-confirm-message="Sûr?"></span>
+					</div>
+					<a href="#/modpage/{{page.id}}">{{page.nom ? page.nom :'(sans nom)'}}</a>
+				</div>
+			<div class="clearfix"></div>					
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+order deny,allow
+allow from all
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(css/.*)$ $1 [QSA,L,NC]
+    RewriteRule ^(lib/.*)$ $1 [QSA,L,NC]
+    RewriteRule ^(img/.*)$ $1 [QSA,L,NC]
+    RewriteRule ^(upload.php)$ $1 [QSA,L,NC]
+    RewriteRule ^(ajax.php)$ $1 [QSA,L,NC]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)       index.php 
+</IfModule>

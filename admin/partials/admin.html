@@ -1,0 +1,24 @@
+<img ng-if="!done" src="img/loader.gif" />
+<div ng-if="done">
+	<div class="col-xs-12 col-sm-6">
+		<p><a href="#/adduser" class="btn btn-primary">Nouvel utilisateur</a></p>
+		<h3>Utilisateurs</h3>
+		<pagination ng-show="usersOk.length>itemsParPage" boundary-links="true" total-items="usersOk.length" page="currentPageU" items-per-page="itemsParPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+		<ul class="list-group">
+			<li ng-repeat="u in (usersOk=(users | filter:q | orderBy:'name')) | startFrom:(currentPageU-1)*itemsParPage | limitTo:itemsParPage" class="list-group-item">
+				<a ng-if="u.id!=1" href="#/moduser/{{u.id}}">{{u.name}}</a>
+				<a ng-if="u.id==1" href="#/moi">{{u.name}}</a>
+				<button ng-if="u.id!=1" ng-confirm-click="delUser(u.id)" ng-confirm-message="Sûr ?" class='btn btn-default btn-xs pull-right'>x</button>
+			</li>
+		</li>
+	</div>
+	<div class="col-xs-12 col-sm-6" ng-show="histOk.length>0">
+		<h3>Historique</h3>
+		<pagination ng-show="histOk.length>itemsParPage" boundary-links="true" total-items="histOk.length" page="currentPage" items-per-page="itemsParPage" class="pagination-sm" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;"></pagination>
+		<ul class="list-group">
+			<li ng-repeat="l in (histOk=(history | filter:q | orderBy:'date':true)) | startFrom:(currentPage-1)*itemsParPage | limitTo:itemsParPage" class="list-group-item">
+				{{byId(users,l.user.id).name ? byId(users,l.user.id).name : l.user.name}}, {{calendar(l.date)}}, {{l.params.verb}} <span class="cursor" ng-click="u.show=1" ng-show="u.show!=1">+</span><span class="cursor" ng-click="u.show=0" ng-show="u.show==1">-</span><pre ng-show="u.show==1">{{dump(l.params)}}</pre>
+			</li>
+		</li>
+	</div>
+</div>
