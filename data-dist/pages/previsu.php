@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 $noexit=1;
 include "admin/server/auth.php";
 if (isset($_SESSION['user'])){

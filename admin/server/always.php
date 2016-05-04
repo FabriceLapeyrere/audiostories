@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 function filter($txt) {
 	$search = array ('@(é|è|ê|ë|Ê|Ë)@i','@(á|ã|à|â|ä|Â|Ä)@i','@(ì|í|i|i|î|ï|Î|Ï)@i','@(ú|û|ù|ü|Û|Ü)@i','@(ò|ó|õ|ô|ö|Ô|Ö)@i','@(ñ|Ñ)@i','@(ý|ÿ|Ý)@i','@(ç)@i','@[\\- ]@i','@[^a-zA-Z0-9_]@');
 	$replace = array ('e','a','i','u','o','n','y','c','_','_');

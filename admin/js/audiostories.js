@@ -1,3 +1,8 @@
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 'use strict';
 moment.lang('fr');
 var app= angular.module('audiostories', ['ngRoute','monospaced.mousewheel','ngDragDrop','ui.bootstrap', 'toggle-switch', 'angularFileUpload','ngSanitize','cfp.hotkeys','ngCkeditor']);

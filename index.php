@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice@surlefil.org>
+ */
 ini_set('max_execution_time', 0);
 include 'shared/utils.php';
 include 'shared/init.php';

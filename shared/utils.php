@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice@surlefil.org>
+ */
 function miniature($w,$h,$file){
 	$path_parts = pathinfo($file);
 	$path=$path_parts['dirname'];

@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 $params=json_decode(file_get_contents('php://input'));
 include '../shared/utils.php';
 include '../shared/init_admin.php';

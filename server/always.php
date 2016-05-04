@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice@surlefil.org>
+ */
 function thumbnail($id,$f,$taille) {
 	global $MINIATURES,$RATIO;
 	$w=$MINIATURES[$taille];

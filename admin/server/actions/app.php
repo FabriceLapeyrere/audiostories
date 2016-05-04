@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 function initApp($params) {
 	global $MINIATURES, $RATIO;
 	$reponse=array();

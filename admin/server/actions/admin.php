@@ -1,4 +1,9 @@
 <?php
+/**
+ *
+ * @license    GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @author     Fabrice Lapeyrere <fabrice.lapeyrere@surlefil.org>
+ */
 function getLog(){
 	if (isset($_SESSION['user']) && $_SESSION['user']['id']==1) {
 		$i=0;
